@@ -12,42 +12,41 @@ import Footer from '@/components/Footer';
 // Import framer-motion for animations
 import { motion } from 'framer-motion';
 
-// Add CSS for animated skill bars
-useEffect(() => {
-  // Style for showing skill bars
-  const showSkillBars = () => {
-    const skillBars = document.querySelectorAll('.skill-bar-fill');
-    skillBars.forEach((bar) => {
-      if (bar instanceof HTMLElement) {
-        const width = bar.getAttribute('data-width') || '0%';
-        bar.style.width = width;
-        bar.style.opacity = '1';
-      }
-    });
-  };
-
-  // Initialize observers for animation triggers
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          showSkillBars();
+const Index = () => {
+  useEffect(() => {
+    // Style for showing skill bars
+    const showSkillBars = () => {
+      const skillBars = document.querySelectorAll('.skill-bar-fill');
+      skillBars.forEach((bar) => {
+        if (bar instanceof HTMLElement) {
+          const width = bar.getAttribute('data-width') || '0%';
+          bar.style.width = width;
+          bar.style.opacity = '1';
         }
       });
-    },
-    { threshold: 0.1 }
-  );
+    };
 
-  // Observe the about section
-  const aboutSection = document.getElementById('about');
-  if (aboutSection) observer.observe(aboutSection);
+    // Initialize observers for animation triggers
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            showSkillBars();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-  return () => {
-    if (aboutSection) observer.unobserve(aboutSection);
-  };
-}, []);
+    // Observe the about section
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) observer.observe(aboutSection);
 
-const Index = () => {
+    return () => {
+      if (aboutSection) observer.unobserve(aboutSection);
+    };
+  }, []);
+
   return (
     <motion.div 
       className="min-h-screen bg-background"
