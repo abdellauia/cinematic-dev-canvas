@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -6,35 +5,27 @@ import { motion } from 'framer-motion';
 const experiences = [
   {
     id: 1,
-    role: 'Senior Frontend Developer',
-    company: 'TechCorp Inc.',
-    location: 'San Francisco, CA',
-    period: 'Jan 2022 - Present',
-    description: 'Led the development of several key features for the company\'s flagship product, improving user engagement by 35%. Mentored junior developers and implemented best practices that reduced bug reports by 40%.',
+    role: 'Census Surveyor',
+    company: 'High Commission for Planning, Morocco',
+    location: 'Morocco',
+    period: '15 Aug 2024 - 30 Sep 2024',
+    description: 'Participated in national census data collection and analysis.',
   },
   {
     id: 2,
-    role: 'Full Stack Developer',
-    company: 'InnovateSoft',
-    location: 'Remote',
-    period: 'Mar 2020 - Dec 2021',
-    description: 'Developed and maintained microservices architecture for e-commerce solutions serving over 100,000 users. Optimized database queries resulting in a 50% improvement in application performance.',
+    role: 'IT Service Manager',
+    company: 'Domaine Bahoch Mohamed',
+    location: 'Morocco',
+    period: '01 Aug 2023 - 31 Aug 2024',
+    description: 'Managed IT services and infrastructure for the organization.',
   },
   {
     id: 3,
-    role: 'Web Developer',
-    company: 'Creative Digital Agency',
-    location: 'New York, NY',
-    period: 'Jun 2018 - Feb 2020',
-    description: 'Created responsive websites and interactive applications for various high-profile clients. Implemented CI/CD pipelines that reduced deployment time by 70%.',
-  },
-  {
-    id: 4,
-    role: 'Junior Developer',
-    company: 'StartUp Ventures',
-    location: 'Boston, MA',
-    period: 'Aug 2017 - May 2018',
-    description: 'Assisted in developing and testing web applications. Contributed to implementing responsive design principles across all company products.',
+    role: 'Intern in Computer Installation and Repair',
+    company: 'Sadki Info Errachidia',
+    location: 'Errachidia, Morocco',
+    period: '01 Sep 2021 - 01 Dec 2021',
+    description: 'Gained hands-on experience in computer hardware installation and repair.',
   },
 ];
 

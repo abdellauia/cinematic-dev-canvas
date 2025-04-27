@@ -1,48 +1,47 @@
-
 import React, { useEffect } from 'react';
-import { Award, Code, Sparkles, Brain, Users, Rocket } from 'lucide-react';
+import { Code, Database, Laptop, BookOpen, Languages, Users } from 'lucide-react';
 
 // Skills data
 const skills = [
-  { name: 'React', level: 90 },
-  { name: 'JavaScript/TypeScript', level: 85 },
-  { name: 'Node.js', level: 80 },
-  { name: 'UI/UX Design', level: 75 },
-  { name: 'AWS', level: 70 },
-  { name: 'Python', level: 65 },
+  { name: 'PHP & Laravel & WordPress', level: 85 },
+  { name: 'JavaScript & ReactJs', level: 80 },
+  { name: 'Python', level: 75 },
+  { name: 'HTML & CSS & TailwindCSS', level: 90 },
+  { name: 'MySQL & MongoDB', level: 80 },
+  { name: 'Github & Git & Docker', level: 85 },
 ];
 
 // Features
 const features = [
   {
     icon: <Code className="h-8 w-8 text-accent" />,
-    title: 'Clean Code',
-    description: 'Writing maintainable, scalable, and efficient code following best practices.'
+    title: 'Web Development',
+    description: 'Developing modern web applications using Laravel, React, and JavaScript.'
   },
   {
-    icon: <Sparkles className="h-8 w-8 text-accent" />,
-    title: 'Creative Solutions',
-    description: 'Crafting innovative approaches to solve complex problems elegantly.'
+    icon: <Database className="h-8 w-8 text-accent" />,
+    title: 'Database Management',
+    description: 'Working with MySQL and MongoDB databases for efficient data storage.'
   },
   {
-    icon: <Brain className="h-8 w-8 text-accent" />,
-    title: 'Fast Learner',
-    description: 'Quickly adapting to new technologies and frameworks as they emerge.'
+    icon: <Laptop className="h-8 w-8 text-accent" />,
+    title: 'Full Stack',
+    description: 'Creating end-to-end solutions from backend to frontend.'
+  },
+  {
+    icon: <BookOpen className="h-8 w-8 text-accent" />,
+    title: 'Continuous Learning',
+    description: 'Always learning and adapting to new technologies and best practices.'
+  },
+  {
+    icon: <Languages className="h-8 w-8 text-accent" />,
+    title: 'Multilingual',
+    description: 'Fluent in Arabic, English (B2), French (A2), and Native in Tamazight.'
   },
   {
     icon: <Users className="h-8 w-8 text-accent" />,
-    title: 'Team Player',
-    description: 'Collaborating effectively with cross-functional teams for shared success.'
-  },
-  {
-    icon: <Award className="h-8 w-8 text-accent" />,
-    title: 'Detail Oriented',
-    description: 'Paying careful attention to every detail for pixel-perfect results.'
-  },
-  {
-    icon: <Rocket className="h-8 w-8 text-accent" />,
-    title: 'Performance Focused',
-    description: 'Optimizing applications for speed, efficiency, and user satisfaction.'
+    title: 'Team Collaboration',
+    description: 'Experience working in teams and managing projects effectively.'
   },
 ];
 
@@ -77,7 +76,7 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-8"></div>
           <p className="text-lg text-gray-300 text-center max-w-3xl">
-            Discover my journey, skills, and what drives me as a developer.
+            Web developer in training, passionate about creating functional and high-performance web applications.
           </p>
         </div>
 

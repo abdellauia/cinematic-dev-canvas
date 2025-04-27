@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Github, ExternalLink, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -7,10 +6,10 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Dashboard',
-    description: 'A comprehensive dashboard for online store management with real-time analytics, inventory tracking, and order processing.',
+    title: 'HR Management System',
+    description: 'A comprehensive Human Resources Management System featuring leave request management and automated generation of work and salary certificates in PDF format. Built with Laravel backend and React frontend.',
     image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2000&auto=format&fit=crop',
-    tags: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+    tags: ['Laravel', 'React', 'MySQL', 'Spatie Laravel'],
     github: '#',
     demo: '#'
   },

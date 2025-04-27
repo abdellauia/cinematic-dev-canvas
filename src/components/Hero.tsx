@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import Particles from '@/components/Particles';
 import Typewriter from '@/components/Typewriter';
 
@@ -8,7 +8,6 @@ const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Simulate loading animation
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 300);
@@ -27,17 +26,17 @@ const Hero = () => {
             </h1>
             
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold">
-              <span className="text-white">Alex</span>
-              <span className="text-gradient"> Johnson</span>
+              <span className="text-white">Ouhssini</span>
+              <span className="text-gradient"> Ahmed</span>
             </h2>
             
             <div className="h-12">
               <Typewriter
                 phrases={[
-                  'Full-Stack Developer',
-                  'UI/UX Designer',
-                  'Tech Enthusiast',
-                  'Problem Solver'
+                  'Web Developer',
+                  'Laravel Developer',
+                  'React Developer',
+                  'Frontend Developer'
                 ]}
                 speed={100}
                 className="text-xl md:text-2xl text-gray-300"
@@ -45,8 +44,8 @@ const Hero = () => {
             </div>
             
             <p className="text-gray-300 text-lg max-w-2xl">
-              I build exceptional and accessible digital experiences for the web. 
-              Focused on creating elegant solutions with modern technologies.
+              Web developer in training, passionate about technologies like Laravel, React, and JavaScript. 
+              I love learning and taking on technical challenges while creating functional and high-performance web applications.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-2">
@@ -66,25 +65,23 @@ const Hero = () => {
             
             <div className="flex space-x-5 pt-4">
               <a 
-                href="#" 
+                href="https://www.github.com/ouhssini" 
                 className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Github size={22} />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/ouhssini" 
                 className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={22} />
               </a>
               <a 
-                href="#" 
-                className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
-              >
-                <Twitter size={22} />
-              </a>
-              <a 
-                href="#" 
+                href="mailto:Ahmedouhssini@gmail.com" 
                 className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
               >
                 <Mail size={22} />
@@ -96,7 +93,7 @@ const Hero = () => {
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary to-secondary opacity-20 blur-3xl animate-pulse-slow"></div>
               <div className="absolute inset-4 rounded-full bg-gradient-to-br from-accent to-primary opacity-20 blur-2xl animate-pulse-slow animation-delay-2000"></div>
-              <div className="relative h-full w-full bg-[url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80')] bg-cover bg-center rounded-full border-4 border-white/10 overflow-hidden">
+              <div className="relative h-full w-full bg-[url('/lovable-uploads/e2aa26ae-4c1e-4935-be8a-599645676604.png')] bg-cover bg-center rounded-full border-4 border-white/10 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
               </div>
             </div>
