@@ -5,11 +5,10 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Projects from '@/components/Projects';
 import Experience from '@/components/Experience';
+import Education from '@/components/Education';
 import TechStack from '@/components/TechStack';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-
-// Import framer-motion for animations
 import { motion } from 'framer-motion';
 
 const Index = () => {
@@ -60,6 +59,7 @@ const Index = () => {
       <Projects />
       <TechStack />
       <Experience />
+      <Education />
       <Contact />
       <Footer />
     </motion.div>
